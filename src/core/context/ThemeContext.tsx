@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { ThemeConfig, defaultTheme, darkTheme, themePresets, ThemePreset } from '../../config/theme';
+import type { ThemeConfig, ThemePreset } from '../../config/theme';
+import { defaultTheme, darkTheme, themePresets } from '../../config/theme';
 
 interface ThemeContextType {
   theme: ThemeConfig;

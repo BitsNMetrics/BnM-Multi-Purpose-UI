@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from './core/context/ThemeContext';
 import { TemplateProvider } from './core/context/TemplateContext';
 import { TemplateDashboard } from './selector/TemplateDashboard';
@@ -122,13 +121,11 @@ const AppContent: React.FC = () => {
 
 function App() {
   return (
-    <HelmetProvider>
-      <ThemeProvider>
-        <TemplateProvider>
-          <AppContent />
-        </TemplateProvider>
-      </ThemeProvider>
-    </HelmetProvider>
+    <ThemeProvider>
+      <TemplateProvider>
+        <AppContent />
+      </TemplateProvider>
+    </ThemeProvider>
   );
 }
 

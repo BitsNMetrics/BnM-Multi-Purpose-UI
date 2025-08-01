@@ -173,10 +173,6 @@ const Footer: React.FC<FooterProps> = ({ config }) => {
                 type="email"
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-xl border-2 border-slate-700 bg-slate-800 text-white placeholder-slate-400 focus:outline-none focus:ring-4 transition-all duration-300"
-                style={{
-                  focusRingColor: `${config.colors.primary}20`,
-                  focusBorderColor: config.colors.primary
-                }}
               />
               <button 
                 className="px-8 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 shadow-lg"

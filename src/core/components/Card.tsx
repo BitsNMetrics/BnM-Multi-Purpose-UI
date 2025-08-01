@@ -39,6 +39,7 @@ export interface CardProps
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, variant, padding, asChild = false, hover = false, interactive = false, children, ...props }, ref) => {
     const Comp = asChild ? motion.div : motion.div;
+    const { onDrag, onDragStart, onDragEnd, onAnimationStart, onAnimationEnd, ...motionProps } = props;
 
     return (
       <Comp
@@ -47,7 +48,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
         whileHover={hover || interactive ? { y: -2, scale: 1.02 } : undefined}
         whileTap={interactive ? { scale: 0.98 } : undefined}
         transition={{ duration: 0.2, ease: 'easeInOut' }}
-        {...props}
+        {...motionProps}
       >
         {children}
       </Comp>

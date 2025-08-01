@@ -24,6 +24,7 @@ export interface DeploymentConfig {
   platform: 'vercel' | 'netlify' | 'github-pages' | 'firebase';
   projectName: string;
   customDomain?: string;
+  author?: string;
 }
 
 // Generate standalone build (HTML/CSS/JS)

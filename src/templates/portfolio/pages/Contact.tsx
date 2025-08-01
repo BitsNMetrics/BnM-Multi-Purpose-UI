@@ -194,10 +194,6 @@ const Contact: React.FC<ContactProps> = ({ config }) => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-4 transition-all duration-300"
-                    style={{
-                      focusRingColor: `${config.colors.primary}20`,
-                      focusBorderColor: config.colors.primary
-                    }}
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -215,10 +211,6 @@ const Contact: React.FC<ContactProps> = ({ config }) => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-4 transition-all duration-300"
-                    style={{
-                      focusRingColor: `${config.colors.primary}20`,
-                      focusBorderColor: config.colors.primary
-                    }}
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -236,10 +228,6 @@ const Contact: React.FC<ContactProps> = ({ config }) => {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-4 transition-all duration-300"
-                    style={{
-                      focusRingColor: `${config.colors.primary}20`,
-                      focusBorderColor: config.colors.primary
-                    }}
                     placeholder="What's this about?"
                   />
                 </div>
@@ -257,10 +245,6 @@ const Contact: React.FC<ContactProps> = ({ config }) => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-4 transition-all duration-300 resize-none"
-                    style={{
-                      focusRingColor: `${config.colors.primary}20`,
-                      focusBorderColor: config.colors.primary
-                    }}
                     placeholder="Tell me about your project..."
                   />
                 </div>
